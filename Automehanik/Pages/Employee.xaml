@@ -1,0 +1,26 @@
+﻿<Page x:Class="Automehanik.Pages.Employee"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Automehanik.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Employee">
+
+    <Grid Background="white">
+        <StackPanel Margin="20">
+            <TextBlock Text="Имя пользователя:" />
+            <TextBox x:Name="UsernameTextBox" Margin="0,5" />
+            <TextBlock Text="Пaроль:" />
+            <PasswordBox x:Name="PasswordBox" Margin="0,5" />
+            <TextBlock Text="Рoль:" />
+            <ComboBox x:Name="RoleComboBox" Margin="0,5">
+                <ComboBoxItem Content="Maстер приемщик" />
+                <ComboBoxItem Content="ABтодиагност" />
+                <ComboBoxItem Content="ABтомежаник" />
+            </ComboBox>
+            <Button Content="Соxpaнить" Name="SaveButton" Click="SaveButton_Click" Margin="0,10"/>
+        </StackPanel>
+    </Grid>
+</Page>
